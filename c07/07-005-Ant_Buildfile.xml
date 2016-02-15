@@ -1,0 +1,9 @@
+<target name="junit-custom-report"
+        description="=> generate XML and custom HTML reports">
+    <junitreport todir="${junit.reports.dir}/xml">
+        <fileset dir="${junit.reports.dir}/xml">
+            <include name="TEST-*.xml" />
+        </fileset>
+        <report format="noframes" styledir="${modified.xsl.dir}" />
+    </junitreport>
+</target>

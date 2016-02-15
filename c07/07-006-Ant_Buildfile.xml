@@ -1,0 +1,8 @@
+<target name="junit-report"
+        description="=> generate JUnit merged XML report">
+    <junitreport todir="${junit.reports.dir}/xml">
+        <fileset dir="${junit.reports.dir}/xml">
+            <include name="TEST-*.xml" />
+        </fileset>
+    </junitreport>
+</target>

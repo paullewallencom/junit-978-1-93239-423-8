@@ -1,0 +1,6 @@
+<target name="transform" description="=> create custom JUnit report">
+    <style in="${junit.reports.dir}/xml/TESTS-TestSuites.xml"
+           out="TESTS-TestSuites.html"
+           extension=".html"
+           style="custom-junitreport.xsl" />
+    </target>

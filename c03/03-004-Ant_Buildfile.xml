@@ -1,0 +1,10 @@
+<project name="Simplified Project Structure" default="compile">
+    <property name="junit.home" value="d:/junit3.8.1" />
+        <target name="compile">
+            <javac fork="yes" srcdir="." includes="**/*.java">
+                <classpath>
+                    <pathelement path="${junit.home}/junit.jar" />
+                </classpath>
+            </javac>
+        </target>
+</project>

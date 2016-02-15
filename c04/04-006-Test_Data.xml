@@ -1,0 +1,18 @@
+<tests name="Money Allocation Tests">
+    <test>
+        <input>
+            <amount-to-split>$1000.00</amount-to-split>
+            <number-of-ways>6</number-of-ways>
+        </input>
+        <expected-result>
+            <cut>
+                <amount>$166.67</amount>
+                <number>4</number>
+            </cut>
+            <cut>
+                <amount>$166.66</amount>
+                <number>2</number>
+            </cut>
+        </expected-result>
+    </test>
+</tests>

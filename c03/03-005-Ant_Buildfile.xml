@@ -1,0 +1,19 @@
+<project name="Simplified Project Structure" default="compileTest">
+    <property name="junit.home" value="d:/junit3.8.1" />
+
+    <target name="compileTest" depends="compileProduction">
+        <javac fork="yes"
+                srcdir="source/test" includes="**/*.java"
+                destdir="classes/test">
+            <classpath>
+                <pathelement path="${junit.home}/junit.jar" />
+                <pathelement path="classes/production" />
+            </classpath>
+        </javac>
+    </target>
+    <target name="compileProduction">
+        <javac fork="yes"
+                srcdir="source/production" includes="**/*.java"
+                destdir="classes/production" />
+    <target>
+</project>
