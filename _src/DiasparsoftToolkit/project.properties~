@@ -1,0 +1,14 @@
+maven.ssh.executable=d:/putty/putty
+maven.scp.executable=d:/putty/pscp
+
+maven.junit.usefile=true
+maven.docs.dest=../Diaspar Web Site/dist/toolkit
+maven.username=diasparsoft
+maven.password=kos5kie
+maven.site.deploy.method=ftp
+
+#
+# IMPORTANT! Without this property, the damn tests don't run!
+#
+maven.junit.fork=yes
+

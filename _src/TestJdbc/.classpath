@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="test/classes" kind="src" path="test/source"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry sourcepath="JUNIT_HOME/junitsrc.zip" kind="var" path="JUNIT_HOME/junit.jar"/>
+	<classpathentry kind="var" path="MIMER_JDBC_DRIVER_HOME/mimjdbc2.jar"/>
+	<classpathentry kind="var" path="J2EE_1_3_HOME/lib/j2ee.jar"/>
+	<classpathentry kind="src" path="/DiasparsoftToolkit"/>
+	<classpathentry sourcepath="COMMONS_COLLECTIONS_SOURCE/src/java" kind="var" path="COMMONS_COLLECTIONS/commons-collections.jar"/>
+	<classpathentry sourcepath="MOCKOBJECTS_HOME/src/jdk/common" kind="var" path="MOCKOBJECTS_HOME/dist/mockobjects-jdk1.4-0.09.jar"/>
+	<classpathentry sourcepath="MOCKOBJECTS_HOME/src/core" kind="var" path="MOCKOBJECTS_HOME/dist/mockobjects-core-0.09.jar"/>
+	<classpathentry sourcepath="MOCKOBJECTS_HOME/src/j2ee/common" kind="var" path="MOCKOBJECTS_HOME/dist/mockobjects-jdk1.4-j2ee1.3-0.09.jar"/>
+	<classpathentry kind="lib" path="D:/easymock1.0/easymock.jar"/>
+	<classpathentry kind="var" path="DBUNIT_HOME/lib/dbunit.jar"/>
+	<classpathentry kind="var" path="DBUNIT_HOME/lib/dtdparser.jar"/>
+	<classpathentry kind="var" path="DBUNIT_HOME/lib/exml.jar"/>
+	<classpathentry kind="src" path="/CoffeeShopJdbc"/>
+	<classpathentry kind="src" path="/CoffeeShopEngine"/>
+	<classpathentry sourcepath="JUNIT_ADDONS_HOME/src.jar" kind="var" path="JUNIT_ADDONS_HOME/junit-addons-1.4.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

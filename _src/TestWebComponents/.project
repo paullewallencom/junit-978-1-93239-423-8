@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>TestWebComponents</name>
+	<comment></comment>
+	<projects>
+		<project>CoffeeShopEngine</project>
+		<project>CoffeeShopWeb</project>
+		<project>Diasparsoft Toolkit</project>
+		<project>GSBase Patches</project>
+		<project>HTMLUnit</project>
+		<project>HTMLUnit Patches</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

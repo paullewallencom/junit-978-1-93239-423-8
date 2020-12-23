@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Paragraph innerText property</title>
+</head>
+<body>
+<p>This page illustrates the cross-browser features of HTMLUnit.</p>
+
+<p>This markup contains a feature unique to Internet Explorer.
+The <code>disabled</code> attribute for a <code>form</code>.
+On IE 4.0+ we expect to see "This is the innerText." On other browsers
+we expect to see no output, but rather a Javascript error.</p>
+
+<hr />
+<p>This is the paragraph we are looking at.</p>
+
+<p id="inputParagraph">This is the innerText.</p>
+
+<hr />
+<p>This is the output.</p>
+
+<script>
+document.write("<p id=\"output\">");
+document.write(inputParagraph.innerText);
+document.writeln("</p>");
+</script>
+<hr />
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "web-jsptaglibrary_1_2.dtd" >
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>Coffee Shop</short-name>
+	<tag>
+		<name>eachShopcartItem</name>
+		<tag-class>junit.cookbook.coffee.jsp.EachShopcartItemHandler</tag-class>
+		<variable>
+			<name-from-attribute>each</name-from-attribute>
+			<variable-class>junit.cookbook.coffee.display.ShopcartItemBean</variable-class>
+			<declare>true</declare>
+			<scope>NESTED</scope>
+		</variable>	
+		<attribute>
+			<name>shopcartBean</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>each</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+</taglib>

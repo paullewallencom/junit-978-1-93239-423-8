@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="source"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/CoffeeShopEngine"/>
+	<classpathentry kind="src" path="/DiasparsoftToolkit"/>
+	<classpathentry kind="var" path="JBOSS_HOME/client/jboss-j2ee.jar"/>
+	<classpathentry sourcepath="COMMONS_COLLECTIONS_SOURCE/src/java" kind="var" path="COMMONS_COLLECTIONS/commons-collections.jar"/>
+	<classpathentry kind="src" path="/CoffeeShopJdbc"/>
+	<classpathentry kind="var" path="JAVAMAIL_HOME/mail.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

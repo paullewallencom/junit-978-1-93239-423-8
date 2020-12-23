@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>JUnit Cookbook Examples</name>
+	<comment></comment>
+	<projects>
+		<project>AOP-based Testing Objects</project>
+		<project>Diasparsoft Toolkit</project>
+		<project>JUnit 3.8.1</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

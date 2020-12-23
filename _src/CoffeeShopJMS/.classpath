@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="source"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="J2EE_1_3_HOME/lib/j2ee.jar"/>
+	<classpathentry kind="src" path="/CoffeeShopEngine"/>
+	<classpathentry kind="src" path="/DiasparsoftToolkit"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

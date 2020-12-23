@@ -1,0 +1,18 @@
+<project basedir="." default="eachSuiteInSeparateJvm">
+	<target name="eachSuiteInSeparateJvm">
+		<junit fork="yes">
+			<formatter type="plain" />
+			<classpath>
+				<pathelement location="test/classes" />
+				<pathelement location="classes" />
+				<pathelement location="d:/junit3.8.1/junit.jar" />
+			</classpath>
+			<batchtest fork="yes" todir="logs">
+				<fileset dir="test/source">
+					<include name="junit/cookbook/running/test/*.java" />
+					<exclude name="**/GlobalData.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+</project>

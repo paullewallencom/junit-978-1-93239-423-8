@@ -1,0 +1,55 @@
+<%@ page 
+language="java"
+contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"
+%>
+
+<%@ page import="java.util.*" %>
+<%@ page import="junit.cookbook.coffee.display.*" %>
+
+<jsp:useBean id="catalog"
+	class="junit.cookbook.coffee.display.CoffeeCatalogBean" scope="request"></jsp:useBean>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="GENERATOR" content="IBM WebSphere Studio" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="theme/Master.css" rel="stylesheet" type="text/css" />
+<title>Coffee Shop - Catalog</title>
+</head>
+<body>
+<h1>our coffee catalog</h1>
+<p>Choose among these wonderful brands.</p>
+<form name="catalogForm" action="coffee" method="POST">
+<table id="catalog" border="1">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Price per kg</th>
+			<th>Quantity</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<%
+for (Iterator i = catalog.items.iterator(); i.hasNext(); ) {
+	CoffeeCatalogItemBean item = (CoffeeCatalogItemBean) i.next();
+%>
+		<tr>
+			<td><%= item.coffeeName %></td>
+			<td><%= item.unitPrice %></td>
+			<td><input type="text" name="quantity-<%= item.productId %>"
+				size="3" maxlength="3" value="0" /></td>
+			<td><input type="submit"
+				name="addToShopcart-<%= item.productId %>" value="Buy!" /></td>
+		</tr>
+		<%
+}
+%>
+	</tbody>
+</table>
+</form>
+</body>
+</html>

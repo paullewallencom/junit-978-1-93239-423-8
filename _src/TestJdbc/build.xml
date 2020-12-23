@@ -1,0 +1,40 @@
+<project name="Testing JDBC Examples" default="runAllTests" basedir=".">
+	<property name="test.report" value="test/report" />
+	
+	<target name="runAllTests">
+		<delete dir="${test.report}/xml" />
+		<mkdir dir="${test.report}/xml" />
+
+        <!-- REFACTOR Create build properties variables for the
+             various file system locations in this task. -->		
+	    <junit fork="yes" printsummary="yes" haltonfailure="no">
+	        <classpath>
+	        	<pathelement path="test/classes" />
+	        	<pathelement path="classes" />
+	        	<pathelement path="../Diasparsoft Toolkit/classes" />
+	        	<pathelement location="d:/junit3.8.1/junit.jar" />
+	        	<pathelement location="d:/mimer-jdbc-2.12/mimjdbc2.jar" />
+	        	<pathelement location="d:/commons-collections-2.1/commons-collections.jar" />
+	            <fileset dir="d:/mockobjects-0.09/dist">
+	            	<include name="*.jar" />
+	            </fileset>
+	        </classpath>
+	
+	        <formatter type="xml"/>
+	
+	        <batchtest fork="yes" todir="${test.report}/xml">
+	            <fileset dir="test/source">
+	                <include name="**/*Test*.java"/>
+	                <exclude name="**/AllTests.java"/>
+	            </fileset>
+	        </batchtest>
+	    </junit>
+
+	    <junitreport todir="${test.report}/xml">
+	        <fileset dir="${test.report}/xml">
+	            <include name="TEST-*.xml"/>
+	        </fileset>
+	        <report format="frames" todir="${test.report}/html"/>
+	    </junitreport>
+	</target>
+</project>

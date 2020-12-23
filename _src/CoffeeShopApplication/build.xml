@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+
+<project name="Coffee Shop Application" basedir="." default="deploy">
+    <property file="build.properties"/>
+    <property name="deploy.dir" value="deploy"/>
+
+    <target name="init">
+        <delete dir="${deploy.dir}"/>
+        <mkdir dir="${deploy.dir}"/>
+    </target>
+
+    <target name="package" depends="init">
+        <echo>Packaging...</echo>
+        
+        <jar casesensitive="yes" destfile="${deploy.dir}/CoffeeShopEJB.jar" basedir="${ejbmodule.dir}/ejbModule" includes="**/*.class,**/*.properties,META-INF/**" excludes="**/*.java"/>
+        
+        <jar casesensitive="yes" destfile="${deploy.dir}/CoffeeShopLegacyEJB.jar">
+            <fileset dir="../CoffeeShopLegacyEJB/classes" includes="**/*.class" />
+            <fileset dir="../CoffeeShopLegacyEJB" includes="META-INF/**.xml" />
+            <fileset dir="../CoffeeShopEngine/classes" includes="**/*.class" />
+            <fileset dir="../CoffeeShopJdbc/classes" includes="**/*.class" />
+        </jar>
+
+        <war destfile="${deploy.dir}/CoffeeShopWeb.war" webxml="${webmodule.dir}/Web Content/WEB-INF/web.xml">
+            <fileset dir="${webmodule.dir}/Web Content">
+                <exclude name="WEB-INF/**"/>
+            </fileset>
+
+            <webinf dir="${webmodule.dir}/Web Content/WEB-INF">
+                <exclude name="web.xml"/>
+            </webinf>
+
+            <classes dir="${webmodule.dir}/classes"/>
+        </war>
+        
+        <war destfile="${deploy.dir}/CoffeeShopInContainerTests.war" webxml="../CoffeeShopInContainerTests/WEB-INF/web.xml">
+            <classes dir="../CoffeeShopInContainerTests/classes" />
+            <classes dir="../TestJdbc/test/classes" />
+            
+            <lib dir="${cactus.home}/lib" />
+            <lib dir="${dbunit.home}/lib" />
+        </war>
+
+        <ear destfile="${deploy.dir}/coffeeShop.ear" appxml="source/metadata/application.xml">
+            <fileset dir="${deploy.dir}" includes="*.jar, *.war"/>
+        </ear>
+    </target>
+
+    <target name="deploy" depends="package">
+        <copy overwrite="yes" file="${deploy.dir}/coffeeShop.ear" todir="${app.server.deploy.dir}"/>
+        <copy file="${mimer.jdbc.home}/mimjdbc2.jar" todir="${app.server.lib.dir}" />
+        <copy file="${diasparsoft.toolkit.dir}/lib/diasparsoft-toolkit-${diasparsoft.toolkit.version}.jar" todir="${app.server.lib.dir}" />
+        <copy file="${dumbster.home}/build/dumbster.jar" todir="${app.server.lib.dir}" />
+        
+        <copy todir="${app.server.deploy.dir}">
+            <fileset dir="../CoffeeShopApplication/source/jboss-deploy/">
+                <exclude name="**/*.*~" />
+                <exclude name="**/*.bak*" />
+            </fileset>
+        </copy>
+    </target>
+</project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!DOCTYPE jboss PUBLIC
+   "-//JBoss//DTD JBOSS 3.2//EN"
+   "http://www.jboss.org/j2ee/dtd/jboss_3_2.dtd">
+<jboss>
+    <enterprise-beans>
+        <entity>
+            <ejb-name>Order</ejb-name>
+            <jndi-name>ejb/Order</jndi-name>
+            <configuration-name>Instance Per Transaction BMP EntityBean</configuration-name>
+            <resource-ref>
+                <res-ref-name>jdbc/OrderData</res-ref-name>
+                <jndi-name>java:/jdbc/mimer/CoffeeShopData</jndi-name>
+            </resource-ref>
+        </entity>
+        
+        <message-driven>
+            <ejb-name>SubmitOrderCommand</ejb-name>
+            <destination-jndi-name>queue/Orders</destination-jndi-name>
+            <resource-ref>
+                <res-ref-name>jms/OrderQueue</res-ref-name>
+                <jndi-name>QueueConnectionFactory</jndi-name>
+            </resource-ref>
+        </message-driven>
+    </enterprise-beans>
+</jboss>
+

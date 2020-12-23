@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="source"/>
+	<classpathentry sourcepath="JRE_SRC" kind="var" path="JRE_LIB"/>
+	<classpathentry kind="var" path="JUNIT_HOME/junit.jar"/>
+	<classpathentry kind="var" path="NEKOHTML_HOME/nekohtml.jar"/>
+	<classpathentry kind="var" path="XMLUNIT_HOME/lib/xmlunit1.0.jar"/>
+	<classpathentry kind="var" path="XERCES_HOME/xercesImpl.jar"/>
+	<classpathentry kind="var" path="XERCES_HOME/xml-apis.jar"/>
+	<classpathentry kind="var" path="XERCES_HOME/xmlParserAPIs.jar"/>
+	<classpathentry kind="var" path="XALAN_HOME/bin/xalan.jar"/>
+	<classpathentry kind="src" path="/CoffeeShopWeb"/>
+	<classpathentry kind="src" path="/CoffeeShopEJB"/>
+	<classpathentry kind="src" path="/DiasparsoftToolkit"/>
+	<classpathentry kind="src" path="/CoffeeShopEngine"/>
+	<classpathentry sourcepath="STRUTS_SOURCE_HOME/src/share" kind="var" path="STRUTS_HOME/lib/struts.jar"/>
+	<classpathentry kind="var" path="STRUTS_TEST_CASE_HOME/strutstest-2.0.0.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

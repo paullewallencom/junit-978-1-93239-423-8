@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Anchor with Text Property</title>
+</head>
+<body>
+<p>This page illustrates the cross-browser features of HTMLUnit.</p>
+<form disabled name="testForm" action="http://www.yahoo.com" method="get">
+</form>
+
+<p>This markup contains a feature unique to Internet Explorer.
+The <code>disabled</code> attribute for a <code>form</code>.
+On IE 6.0 we expect to see "The form is disabled." On other browsers
+we expect to see "The form is enabled.".</p>
+
+<pre>
+<form disabled="disabled" name="testForm" action="http://www.yahoo.com" method="get">
+</form>
+</pre>
+
+<script>
+document.write("<p id=\"output\">The form is ");
+
+if (document.forms["testForm"].disabled == true) {
+    document.write("disabled.");
+}
+else {
+    document.write("enabled.");
+}
+
+document.writeln("</p>");
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Java Source"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/DiasparsoftToolkit"/>
+	<classpathentry kind="var" path="J2EE_1_3_HOME/lib/j2ee.jar"/>
+	<classpathentry kind="src" path="/CoffeeShopEJB"/>
+	<classpathentry kind="var" path="XERCES_HOME/xercesImpl.jar"/>
+	<classpathentry kind="var" path="XERCES_HOME/xml-apis.jar"/>
+	<classpathentry kind="var" path="XERCES_HOME/xmlParserAPIs.jar"/>
+	<classpathentry kind="src" path="/CoffeeShopEngine"/>
+	<classpathentry sourcepath="COMMONS_COLLECTIONS_SOURCE/src/java" kind="var" path="COMMONS_COLLECTIONS/commons-collections.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

@@ -1,0 +1,13 @@
+com.diasparsoftware.gsbase
+com.diasparsoftware.htmlunitx
+com.diasparsoftware.java.io
+com.diasparsoftware.java.lang
+com.diasparsoftware.java.sql
+com.diasparsoftware.java.util
+com.diasparsoftware.javax.jms
+com.diasparsoftware.javax.servlet
+com.diasparsoftware.javax.servlet.http
+com.diasparsoftware.jdbc
+com.diasparsoftware.store
+com.diasparsoftware.util.jboss.testing
+com.diasparsoftware.util.junit

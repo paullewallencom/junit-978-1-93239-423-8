@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>CoffeeShopLegacyEJBTests</name>
+	<comment></comment>
+	<projects>
+		<project>CoffeeShopEngine</project>
+		<project>CoffeeShopJdbc</project>
+		<project>CoffeeShopLegacyEJB</project>
+		<project>Diasparsoft Toolkit</project>
+		<project>TestJdbc</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

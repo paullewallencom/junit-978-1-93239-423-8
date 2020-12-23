@@ -1,0 +1,41 @@
+Tue Jun 08 12:41:31 EDT 2004  [debug] AvalonLogSystem initialized using logfile 'velocity.log'
+Tue Jun 08 12:41:31 EDT 2004   [info] ************************************************************** 
+Tue Jun 08 12:41:31 EDT 2004   [info] Starting Jakarta Velocity v1.4-dev
+Tue Jun 08 12:41:31 EDT 2004   [info] RuntimeInstance initializing.
+Tue Jun 08 12:41:31 EDT 2004   [info] Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+Tue Jun 08 12:41:31 EDT 2004   [info] Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Tue Jun 08 12:41:31 EDT 2004   [info] Using logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Tue Jun 08 12:41:31 EDT 2004   [info] Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+Tue Jun 08 12:41:31 EDT 2004   [info] Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Tue Jun 08 12:41:31 EDT 2004   [info] FileResourceLoader : initialization starting.
+Tue Jun 08 12:41:31 EDT 2004   [info] FileResourceLoader : adding path 'C:\Documents and Settings\jbrains\.maven\plugins\maven-xdoc-plugin-1.7.1\plugin-resources/templates'
+Tue Jun 08 12:41:31 EDT 2004   [info] FileResourceLoader : initialization complete.
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+Tue Jun 08 12:41:31 EDT 2004   [info] Default ResourceManager initialization complete.
+Tue Jun 08 12:41:31 EDT 2004   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+Tue Jun 08 12:41:31 EDT 2004   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+Tue Jun 08 12:41:31 EDT 2004   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+Tue Jun 08 12:41:31 EDT 2004   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Include
+Tue Jun 08 12:41:31 EDT 2004   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+Tue Jun 08 12:41:31 EDT 2004   [info] Created: 20 parsers.
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : initialization starting.
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : adding VMs from VM library template : VM_global_library.vm
+Tue Jun 08 12:41:31 EDT 2004  [error] ResourceManager : unable to find resource 'VM_global_library.vm' in any resource loader.
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : error using  VM library template VM_global_library.vm : org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'VM_global_library.vm'
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro :  VM library template macro registration complete.
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : allowInline = true : VMs can be defined inline in templates
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : allowInlineLocal = false : VMs defined inline will be  global in scope if allowed.
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : messages on  : VM system will output logging messages
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : autoload off  : VM system will not automatically reload global library macros
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : initialization complete.
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocity successfully started.
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceManager : found cvs-usage.xml with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceManager : found index.xml with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceManager : found maven-reports.xml with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceManager : found dependencies.xml with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceManager : found issue-tracking.xml with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Tue Jun 08 12:41:31 EDT 2004   [info] Velocimacro : added new VM : #displayLink( label link ) : source = mail-lists.xml
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceManager : found mail-lists.xml with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceManager : found project-info.xml with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Tue Jun 08 12:41:31 EDT 2004   [info] ResourceManager : found team-list.xml with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader

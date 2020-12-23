@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="classes" kind="src" path="source"/>
+	<classpathentry output="test/classes" kind="src" path="test/source"/>
+	<classpathentry sourcepath="JRE_SRC" kind="var" path="JRE_LIB"/>
+	<classpathentry sourcepath="JUNIT_ADDONS_RUNNER_HOME/src.jar" kind="var" path="JUNIT_ADDONS_RUNNER_HOME/junit-addons-runner-1.0-alpha2.jar"/>
+	<classpathentry sourcepath="GSBASE_HOME/src/java" kind="var" path="GSBASE_HOME/gsbase-2.0.jar"/>
+	<classpathentry sourcepath="JUNIT_ADDONS_HOME/src.jar" kind="var" path="JUNIT_ADDONS_HOME/junit-addons-1.4.jar"/>
+	<classpathentry kind="src" path="/DiasparsoftToolkit"/>
+	<classpathentry sourcepath="XMLUNIT_HOME/src/java" kind="var" path="XMLUNIT_HOME/lib/xmlunit1.0.jar"/>
+	<classpathentry kind="var" path="XERCES_HOME/xercesImpl.jar"/>
+	<classpathentry kind="var" path="XERCES_HOME/xml-apis.jar"/>
+	<classpathentry kind="var" path="XERCES_HOME/xmlParserAPIs.jar"/>
+	<classpathentry sourcepath="EASYMOCK_HOME/src.zip" kind="var" path="EASYMOCK_HOME/easymock.jar"/>
+	<classpathentry kind="src" path="/JUnit 3.8.1"/>
+	<classpathentry kind="lib" path="D:/junit3.8.1/junit-tests.jar"/>
+	<classpathentry sourcepath="COMMONS_COLLECTIONS_SOURCE/src/java" kind="var" path="COMMONS_COLLECTIONS/commons-collections.jar"/>
+	<classpathentry kind="var" path="JAVASSIST_HOME/javassist.jar"/>
+	<classpathentry kind="var" path="JUNITX_HOME/lib/junitx-5.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
